@@ -2,12 +2,13 @@
 $color-blue: #445B8B;
 $color-teal: #3CADD7;
 $color-purple: #9593D9;
-$color-maroon: #7D5C65;
 $color-lightest-gray: #DEE2E6;
+$color-deep-blue: #1C1726;
 
 //$bodyfont: 'EB Garamond', serif;
 $bodyfont: 'Lora', ;
-$titlefont: 'Gochi Hand', ;
+$titlefont: 'Lora', ;
+//$titlefont: 'Gochi Hand', ;
 
 #bg {
     position: fixed; 
@@ -43,7 +44,7 @@ h1, h2, h3 {
 
 
 h1 {
-    font-size: 8.5em;
+    font-size: 8em;
     color: white;
 }
 
@@ -95,11 +96,11 @@ h2 {
 
 .site-logo {
     font-family: $titlefont;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     display: block;
     overflow: visible;
-    border: 5px solid white;
+    border: 2px solid white;
     position: relative;
     transform:rotate(0deg);
     transition: transform .4s ease-in-out;
@@ -113,7 +114,7 @@ h2 {
     transform: translate(-50%, -50%) rotate(0deg);
     transition: transform .4s ease-in-out;
     font-weight: bold;
-    font-size: 1em;
+    font-size: .5em;
   }
 
 .site-logo:hover {
@@ -143,7 +144,7 @@ h2 {
     position: absolute;
     width: 90%;
     height: 1px;
-    bottom: 0px;
+    top: 0px;
     left: 5%;
     background-color: $color-lightest-gray;
     visibility: hidden;
@@ -164,7 +165,7 @@ h2 {
 .intro-block {
 
     padding-bottom: 10%;
-    background-color: rgba(0,0,0,.5);
+    background-image: linear-gradient(to right, rgba(0,0,0,.8), rgba(0,0,0,.1));
     
 
     .main-heading {
@@ -193,24 +194,25 @@ h2 {
 }
 
 .second-block {
-    background-color: $color-purple;
+    background-color: $color-deep-blue;
     padding-bottom: 20%;
 }
 
 .third-block {
-    background-color: $color-blue;
+    background-image: linear-gradient(to right, rgba(0,0,0,.8), rgba(0,0,0,.1));
+    padding: 20%;
+}
+
+.connect {
+    background-color: rgba(0,0,0,.7);
     padding-bottom: 5%;
     border-style: solid;
     border-color: white;
-    margin-left: 20%;
-    margin-right: 20%;
+    //margin-left: 20%;
+    //margin-right: 20%;
 }
 
 .site-footer {
-    background-color: $color-blue;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    //padding: 20px 0;
 
     a:link {
         color: white;
