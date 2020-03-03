@@ -32,11 +32,12 @@ $(document).ready(function () {
         } // End if
     });
 
+
     $('#scroll').click(function(e) {
         
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: 500
+            scrollTop: 800
         }, 500);
     });
 

@@ -4,18 +4,21 @@ $color-teal: #3CADD7;
 $color-purple: #9593D9;
 $color-lightest-gray: #DEE2E6;
 $color-deep-blue: #1C1726;
+$color-offwhite: #fff9f5;
 
 //$bodyfont: 'EB Garamond', serif;
 $bodyfont: 'Lora', ;
 $titlefont: 'Lora', ;
 //$titlefont: 'Gochi Hand', ;
 
+
+
 #bg {
     position: fixed; 
     top: -30%; 
     left: -30%; 
-    width: 100%; 
-    height: 100%;
+    width: 160%; 
+    height: 160%;
 
 }
   #bg img {
@@ -34,7 +37,7 @@ $titlefont: 'Lora', ;
 body {
     font-family: $bodyfont;
     font-size: .9em;
-    color: white;
+    color: $color-offwhite;
 }
 
 h1, h2, h3 {
@@ -46,7 +49,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 8em;
-    color: white;
+    
 }
 
 h2 {
@@ -101,7 +104,7 @@ h2 {
     height: 30px;
     display: block;
     overflow: visible;
-    border: 2px solid white;
+    border: 2px solid $color-offwhite;
     position: relative;
     transform:rotate(0deg);
     transition: transform .4s ease-in-out;
@@ -173,6 +176,7 @@ h2 {
         padding-top: 10%;
         padding-bottom: 10%;
         line-height: .9em;
+        color: $color-offwhite;
     }
     
     .sub-heading {
@@ -184,24 +188,29 @@ h2 {
 }
 
 #scroll {
-    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
     width: 15%;
     animation-name: scroll;
+    animation-delay: 3s;
     animation-duration: 2.5s;
     animation-timing-function: ease-out;
     animation-iteration-count: 3;
     transition: transform 1s;
 }
 @keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: .5; }
-  100% { transform: translateY(15px); opacity: 0;}
+  
+  0% { transform: translateY(0); opacity: .5; }
+  50% { transform: translateY(20px); opacity: .5; }
+  100% { transform: translateY(0px); opacity: .5; }
+
 }
 
-
 #scroll:hover {
+    animation-play-state: paused;
+    cursor: pointer;
     position: relative;
-    transform: translate(0px, 20px);
+    transform: translateY(20px);
+
 }
 
 
@@ -209,13 +218,30 @@ h2 {
 
 
 .first-block {
-    background-color: $color-blue;
-    padding-bottom: 20%;
+    background-color: $color-offwhite;
+    color: $color-deep-blue;
+    padding: 15% 20%;
+
+    h1 {
+        line-height: .9em;
+        padding: 15% 0%;
+    }
+    
+    
 }
+
 
 .second-block {
     background-color: $color-deep-blue;
-    padding-bottom: 20%;
+    padding: 10% 0%;
+
+    .project-box {
+        padding: 15% 0;
+        //color: $color-deep-blue;
+
+        
+    }
+
 }
 
 .third-block {
@@ -227,7 +253,7 @@ h2 {
     background-color: rgba(0,0,0,.7);
     padding-bottom: 5%;
     border-style: solid;
-    border-color: white;
+    border-color: $color-offwhite;
     //margin-left: 20%;
     //margin-right: 20%;
 }
@@ -235,13 +261,13 @@ h2 {
 .site-footer {
 
     a:link {
-        color: white;
+        color: $color-offwhite;
         background-color: transparent;
         text-decoration: underline;
       }
       
     a:visited {
-        color: white;
+        color: $color-offwhite;
         background-color: transparent;
         text-decoration: underline;
       }
@@ -261,5 +287,5 @@ h2 {
 }
 
 .fa-social {
-    color: white;
+    color: $color-offwhite;
 }

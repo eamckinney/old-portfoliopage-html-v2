@@ -2,8 +2,8 @@
   position: fixed;
   top: -30%;
   left: -30%;
-  width: 100%;
-  height: 100%; }
+  width: 160%;
+  height: 160%; }
 
 #bg img {
   position: absolute;
@@ -20,14 +20,13 @@
 body {
   font-family: "Lora";
   font-size: .9em;
-  color: white; }
+  color: #fff9f5; }
 
 h1, h2, h3 {
   font-family: "Lora"; }
 
 h1 {
-  font-size: 8em;
-  color: white; }
+  font-size: 8em; }
 
 h2 {
   font-size: 5em; }
@@ -64,7 +63,7 @@ h2 {
   height: 30px;
   display: block;
   overflow: visible;
-  border: 2px solid white;
+  border: 2px solid #fff9f5;
   position: relative;
   transform: rotate(0deg);
   transition: transform .4s ease-in-out;
@@ -121,15 +120,17 @@ h2 {
   .intro-block .main-heading {
     padding-top: 10%;
     padding-bottom: 10%;
-    line-height: .9em; }
+    line-height: .9em;
+    color: #fff9f5; }
   .intro-block .sub-heading {
     padding-right: 40%;
     font-size: .9em; }
 
 #scroll {
-  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
   width: 15%;
   animation-name: scroll;
+  animation-delay: 3s;
   animation-duration: 2.5s;
   animation-timing-function: ease-out;
   animation-iteration-count: 3;
@@ -137,25 +138,34 @@ h2 {
 
 @keyframes scroll {
   0% {
-    opacity: 0; }
-  10% {
     transform: translateY(0);
     opacity: .5; }
+  50% {
+    transform: translateY(20px);
+    opacity: .5; }
   100% {
-    transform: translateY(15px);
-    opacity: 0; } }
+    transform: translateY(0px);
+    opacity: .5; } }
 
 #scroll:hover {
+  animation-play-state: paused;
+  cursor: pointer;
   position: relative;
-  transform: translate(0px, 20px); }
+  transform: translateY(20px); }
 
 .first-block {
-  background-color: #445B8B;
-  padding-bottom: 20%; }
+  background-color: #fff9f5;
+  color: #1C1726;
+  padding: 15% 20%; }
+  .first-block h1 {
+    line-height: .9em;
+    padding: 15% 0%; }
 
 .second-block {
   background-color: #1C1726;
-  padding-bottom: 20%; }
+  padding: 10% 0%; }
+  .second-block .project-box {
+    padding: 15% 0; }
 
 .third-block {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
@@ -165,15 +175,15 @@ h2 {
   background-color: rgba(0, 0, 0, 0.7);
   padding-bottom: 5%;
   border-style: solid;
-  border-color: white; }
+  border-color: #fff9f5; }
 
 .site-footer a:link {
-  color: white;
+  color: #fff9f5;
   background-color: transparent;
   text-decoration: underline; }
 
 .site-footer a:visited {
-  color: white;
+  color: #fff9f5;
   background-color: transparent;
   text-decoration: underline; }
 
@@ -188,4 +198,4 @@ h2 {
   text-decoration: underline; }
 
 .fa-social {
-  color: white; }
+  color: #fff9f5; }
