@@ -1,10 +1,6 @@
-// When navbar item is clicked, go 66 pixels above the target
-window.addEventListener("hashchange", function () {
-        
-    //window.scrollTo(window.scrollX, window.scrollY - 60);
-        //behavior: 'smooth'
-    //});
-});
+
+
+
 
 $(document).ready(function () {
     
@@ -17,7 +13,7 @@ $(document).ready(function () {
             e.preventDefault();
         
             // Store hash
-            var hash = this.hash;
+            let hash = this.hash;
 
             // Add smooth page scroll
             $('html, body').animate({
@@ -30,13 +26,21 @@ $(document).ready(function () {
 
             $('.navbar li.active').removeClass('active');
 
-            var $parent = $(this).parent();
+            let $parent = $(this).parent();
             $parent.addClass('active');
 
         } // End if
-
-
     });
+
+    $('#scroll').click(function(e) {
+        
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 500
+        }, 500);
+    });
+
+
 
 
     
