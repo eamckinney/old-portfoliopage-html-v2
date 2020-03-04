@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
@@ -72,10 +73,10 @@
         <div class="row" id="About">
             <div class="col first-block">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-sm-6">
                         <h1 class="text-right" data-aos="fade-up" data-aos-duration="1000">About<br>Me</h1>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-6">
                         <p class="text-left" data-aos="fade-up" data-aos-duration="1000">
                             I am a person of many interests. A curious person, I'd say. "Spirited." I'm interested in people and how they think.
                             I wonder about how one's subconscious affects their decision-making. I like to think about design and 
@@ -90,35 +91,115 @@
                             get from here to there? How can we learn and improve along the way? Ok? Let's go.
                         </p>
                         <!--img class="img-fluid about-image" src="img/em-and-bailey-2.jpg" alt="Emily and her dog, Bailey"/-->
+                        
                     </div>
-                </div> 
-            </div>
-                
-
-            
+                </div>
+            </div>          
         </div>
+        <div class="row">
+            <div class="col first-block-scroll">
+                <div class="text-center mx-auto" id="scroll-about">
+                    <p style="font-size:12px" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">Scroll<br><i class="fa fa-lg fa-angle-double-down"></i></p>
+                </div>
+            </div>
+        </div>
+
     </div>
+    
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col second-block">
-                <div class="row align-items-center">
-                    <div class="col my-5 ml-5 px-3 second-block border border-light project-box">
-                        <p>An image with text overlayed, click to learn more?</p>
-                    </div>
-                    <div class="col my-5 ml-5 second-block border border-light project-box">
-        
+            <div class="col second-block px-5">
+                <hr>
+                <div class="row" id="Projects">
+                    <div class="col-sm-6">
+                        
+                        <div class="row">
+                            
+                            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                                <div class="mt-5 mx-2 px-4 py-4 rounded project-box" id="project1">
+                                    <h5>Project Name</h5>
+                                    <p>
+                                        An image with text overlayed, click to learn more? 
+                                        I like the shadow, color blocking, slightly rounded corners. Modal on hover with more info?
+                                    </p>
+                                    <button type="button" class="btn btn-light" id="seeMore">See More</button>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                                <div class="mt-5 mx-2 px-4 py-4 rounded project-box" id="project2">
+                                    <h5>Project Name</h5>
+                                    <p>
+                                        An image with text overlayed, click to learn more? 
+                                        I like the shadow, color blocking, slightly rounded corners. Modal on hover with more info?
+                                    </p>
+                                    <button type="button" class="btn btn-light" id="seeMore">See More</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="row">
+                            
+                            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                                <div class="mt-5 mx-2 px-4 py-4 rounded project-box" id="project3">
+                                    <h5>Project Name</h5>
+                                    <p>
+                                        An image with text overlayed, click to learn more? 
+                                        I like the shadow, color blocking, slightly rounded corners. Modal on hover with more info?
+                                    </p>
+                                    <button type="button" class="btn btn-light" id="seeMore">See More</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                                <div class="mt-5 mx-2 px-4 py-4 rounded project-box" id="project3">
+                                    <h5>Project Name</h5>
+                                    <p>
+                                        An image with text overlayed, click to learn more? 
+                                        I like the shadow, color blocking, slightly rounded corners. Modal on hover with more info?
+                                    </p>
+                                    <button type="button" class="btn btn-light" id="seeMore">See More</button>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                     
-                    <div class="col second-block" id="Projects">
-                        <h2 class="mx-5 text-left" data-aos="fade-up" data-aos-duration="1000">Projects</h2>
-                        <p class="mx-5 text-left" data-aos="fade-up" data-aos-duration="1000">Here is some text about my projects.</p>
+                    
+                    
+                    <div class="col-sm-5 mx-4">
+                        <div class="mt-5 align-items-center"></div>
+                            <h1 class="text-left" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
+                            <p class="text-left" data-aos="fade-up" data-aos-duration="1000">Here is some text about my projects.</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
         </div>
     </div>
+
+
+    <div id="projectModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h3 class="modal-title">Reserve a Campsite </h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <footer class="site-footer">

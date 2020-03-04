@@ -41,8 +41,19 @@ $(document).ready(function () {
         }, 500);
     });
 
+    $('#scroll-about').click(function(e) {
+        
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 1450
+        }, 500);
+    });
 
 
+
+    $("#seeMore").click(function(){
+        $("#projectModal").modal("toggle");
+    });
 
     
 

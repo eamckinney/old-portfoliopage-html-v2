@@ -153,19 +153,54 @@ h2 {
   position: relative;
   transform: translateY(20px); }
 
+hr {
+  border-width: 1px;
+  border-color: black; }
+
 .first-block {
   background-color: #fff9f5;
-  color: #1C1726;
-  padding: 15% 20%; }
+  color: #3D405B;
+  padding: 10% 20% 7%; }
   .first-block h1 {
     line-height: .9em;
-    padding: 15% 0%; }
+    padding: 15% 5%; }
+
+.first-block-scroll {
+  background-color: #fff9f5;
+  color: #3D405B; }
+  .first-block-scroll #scroll-about {
+    color: #3D405B;
+    width: 15%;
+    transition: transform 1s; }
+  .first-block-scroll #scroll-about:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(20px); }
 
 .second-block {
-  background-color: #1C1726;
-  padding: 10% 0%; }
+  background-color: #fff9f5;
+  color: #3D405B;
+  padding-top: 5%; }
+  .second-block #Projects {
+    padding-top: 10%;
+    padding-bottom: 15%; }
   .second-block .project-box {
-    padding: 15% 0; }
+    position: relative;
+    color: #fff9f5;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 1s; }
+  .second-block .project-box:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(10px); }
+  .second-block #project1 {
+    background-color: #3D405B; }
+  .second-block #project2 {
+    background-color: #E07A5F; }
+  .second-block #project3 {
+    background-color: #81B29A; }
 
 .third-block {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
